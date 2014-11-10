@@ -1,0 +1,82 @@
+*vcalc.jax*
+			ビジュアル計算機
+
+Version: 1.0
+Author: mugetu
+License: MIT license  {{{
+    Permission is hereby granted, free of charge, to any person obtaining
+    a copy of this software and associated documentation files (the
+    "Software"), to deal in the Software without restriction, including
+    without limitation the rights to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so, subject to
+    the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+}}}
+
+==============================================================================
+目次						*vcalc-contents*
+
+概要						|vcalc-introduction|
+インターフェース				|vcalc-interface|
+	コマンド				|vcalc-commands|
+	関数					|vcalc-functions|
+	キーマッピング				|vcalc-key-mappings|
+カスタマイズ					|vcalc-customizing|
+更新履歴					|vcalc-changelog|
+
+==============================================================================
+概要						*vcalc-introduction*
+
+*vcalc.vim* は、Vim 上で計算機をビジュアル的に使うプラグインです。
+
+要件:
+- Vim 7.0 以降
+
+==============================================================================
+インターフェース				*vcalc-interface*
+
+==============================================================================
+コマンド					*vcalc-commands*
+
+:Vcalc			*:Vcalc*
+			計算機を表示します。
+
+==============================================================================
+関数						*vcalc-functions*
+
+==============================================================================
+キーマッピング					*vcalc-key-mappings*
+
+<Plug>(vcalc)		*<Plug>(vcalc)*
+			|:Vcalc| を実行します。
+
+						*g:vcalc_no_default_key_mappings*
+以下のキーマッピングは、既に定義されていたり g:vcalc_no_default_key_mappings
+に 1 が設定されていると定義されません。
+
+{lhs}			{rhs}
+--------		------------------------------
+<Leader>vcal		<Plug>(vcalc)
+
+==============================================================================
+カスタマイズ					*vcalc-customizing*
+
+==============================================================================
+更新履歴					*vcalc-changelog*
+
+1.0			2014/10/29
+			- 初版。
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
